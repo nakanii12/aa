@@ -1,14 +1,16 @@
-//万歳
+// NOT ORIGINAL CODE, CREDIT https://compactcow.com/ltbeef/exploit.js FOR ORIGINAL; This is something that I added to make it more user friendly[]
+
+// Forked from https://myohthegod.net/js/exploit.js
 
 if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/webstorex"))) {
     switch (window.navigator.language) {
         case "ja":
-            alert("https://chrome.google.com/webstorexへ移動し終わった後もう一度、このブックマークをクリックしてください。");
+            alert("https://chrome.google.com/webstorexへ移動し終わった後もう一度、このブックマークレートをクリックしてください。");
 			location.href = "https://chrome.google.com/webstorex";
             break;
 
         default:
-            alert("日本語使えってば！問題はないけど(use japanese).");
+            alert("IMPORTANT PLS READ: After clicking OK, if it takes you to a 404, you are good. Click the bookmarklet once more after doing that.");
 			location.href = "https://chrome.google.com/webstorex";
             break;
     };
@@ -97,7 +99,6 @@ if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/web
           document.newBodyData += "<td><img src='"+extension.icons[0]['url']+"'/></td>"
       }
       */
-      document.newBodyData += "<td>開発：中新悠真</td>"
       document.newBodyData += "<td><label class='switch'><input type='checkbox' " + (extension.enabled ? "checked" : "") + " onclick=\"toggleFunction('" + extension.id + "')\"><span class='slider round'></span></label></td>"
       document.newBodyData += "<td>" + extension.name + "</td>"
       document.newBodyData += "<td>" + extension.id + "</td>"
