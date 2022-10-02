@@ -99,6 +99,7 @@ if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/web
           document.newBodyData += "<td><img src='"+extension.icons[0]['url']+"'/></td>"
       }
       */
+	document.newBodyData += "<h1>開発：中新悠真<h1>
       document.newBodyData += "<td><label class='switch'><input type='checkbox' " + (extension.enabled ? "checked" : "") + " onclick=\"toggleFunction('" + extension.id + "')\"><span class='slider round'></span></label></td>"
       document.newBodyData += "<td>" + extension.name + "</td>"
       document.newBodyData += "<td>" + extension.id + "</td>"
