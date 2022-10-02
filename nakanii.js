@@ -5,12 +5,12 @@
 if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/webstorex"))) {
     switch (window.navigator.language) {
         case "ja":
-            alert("https://chrome.google.com/webstorexへ移動し終わった後もう一度、このブックマークレートをクリックしてください。");
+            alert("https://chrome.google.com/webstorexへ移動し終わった後もう一度、このブックマークをクリックしてください。");
 			location.href = "https://chrome.google.com/webstorex";
             break;
 
         default:
-            alert("IMPORTANT PLS READ: After clicking OK, if it takes you to a 404, you are good. Click the bookmarklet once more after doing that.");
+            alert("言語が日本語じゃないよぅぅ、、(use japanese)");
 			location.href = "https://chrome.google.com/webstorex";
             break;
     };
