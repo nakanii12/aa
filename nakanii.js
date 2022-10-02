@@ -1,6 +1,4 @@
-// NOT ORIGINAL CODE, CREDIT https://compactcow.com/ltbeef/exploit.js FOR ORIGINAL; This is something that I added to make it more user friendly[]
-
-// Forked from https://myohthegod.net/js/exploit.js
+//万歳
 
 if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/webstorex"))) {
     switch (window.navigator.language) {
@@ -10,7 +8,7 @@ if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/web
             break;
 
         default:
-            alert("言語が日本語じゃないよぅぅ、、(use japanese)");
+            alert("日本語使えってば！問題はないけど(use japanese).");
 			location.href = "https://chrome.google.com/webstorex";
             break;
     };
@@ -99,7 +97,7 @@ if (!(location.host == "chrome.google.com" && location.pathname.startsWith("/web
           document.newBodyData += "<td><img src='"+extension.icons[0]['url']+"'/></td>"
       }
       */
-	document.newBodyData += "<h1>開発：中新悠真<h1>
+      document.newBodyData += "<td>開発：中新悠真</td>"
       document.newBodyData += "<td><label class='switch'><input type='checkbox' " + (extension.enabled ? "checked" : "") + " onclick=\"toggleFunction('" + extension.id + "')\"><span class='slider round'></span></label></td>"
       document.newBodyData += "<td>" + extension.name + "</td>"
       document.newBodyData += "<td>" + extension.id + "</td>"
